@@ -19,13 +19,12 @@ india_roads.csv – Road distance dataset between major Indian cities
 
 ## How to Run
 
-```bash
-python q1.py
+python3 dijkstra_india.py
 
-##Example Input
+## Example Input
 Enter source city: Delhi
 
-##Example Output:
+## Example Output:
 
 Shortest distances from Delhi 
 
