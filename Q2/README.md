@@ -1,15 +1,34 @@
-Q2 – UGV Navigation in Static Obstacle Environment
+ ## Q2 – UGV Navigation in Static Obstacle Environment
 
-A 70x70 grid represents the battlefield.
+In this problem, a **70 × 70 grid** represents a battlefield area.  
+The **Unmanned Ground Vehicle (UGV)** must navigate from a **user-specified start node** to a **user-specified goal node** while avoiding obstacles.
 
-Obstacles are generated randomly with three density levels.
+### Environment Setup
 
-A* search algorithm is used to compute the shortest collision-free path from start to goal.
+- The battlefield is represented as a **70 × 70 grid map**.
+- Obstacles are **static and known beforehand**.
+- Obstacles are generated randomly with three different density levels:
+  - **Low density**
+  - **Medium density**
+  - **High density**
 
-Measures of Effectiveness reported:
-- Path length
-- Nodes expanded
-- Execution time
+### Algorithm Used
+
+The **A\* search algorithm** is used to compute the **shortest collision-free path** from the start node to the goal node.
+
+A\* combines the actual path cost with a heuristic function to efficiently explore the grid and find the optimal path.
+
+### Path Tracing
+
+Once the goal is reached, the algorithm traces back the path from the goal node to the start node and displays the **shortest safe route** taken by the UGV.
+
+### Measures of Effectiveness
+
+The following metrics are used to evaluate navigation performance:
+
+- **Path Length** – total number of steps from start to goal  
+- **Nodes Expanded** – number of explored grid states  
+- **Execution Time** – time taken to compute the path
 
 ## Example Input
 
