@@ -19,7 +19,9 @@ india_roads.csv – Road distance dataset between major Indian cities
 
 ## How to Run
 
+```bash
 python3 dijkstra_india.py
+```
 
 ## Example Input
 Enter source city: Delhi
